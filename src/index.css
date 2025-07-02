@@ -1,0 +1,188 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 50% 98%; /* Lighter, warmer beige */
+    --foreground: 25 20% 15%; /* Darker, rich brown */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 25 20% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 20% 15%;
+    
+    --primary: 30 90% 55%; /* Richer, vibrant orange */
+    --primary-foreground: 0 0% 100%; /* White for contrast */
+    
+    --secondary: 35 60% 95%; /* Softer, creamy off-white */
+    --secondary-foreground: 25 20% 25%;
+    
+    --muted: 35 40% 92%; /* Light warm gray */
+    --muted-foreground: 25 15% 45%;
+    
+    --accent: 45 85% 50%; /* Golden yellow */
+    --accent-foreground: 25 20% 10%;
+    
+    --destructive: 0 70% 50%; /* Slightly softer red */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 30% 85%; /* Warmer border color */
+    --input: 30 30% 85%;
+    --ring: 30 90% 60%; /* Primary color for focus rings */
+    
+    --radius: 0.75rem; /* Slightly larger radius for a softer look */
+  }
+ 
+  .dark {
+    --background: 25 20% 10%; /* Dark brown */
+    --foreground: 30 50% 90%; /* Light beige */
+    
+    --card: 25 20% 12%; /* Slightly lighter dark brown for cards */
+    --card-foreground: 30 50% 90%;
+    
+    --popover: 25 20% 10%;
+    --popover-foreground: 30 50% 90%;
+    
+    --primary: 30 90% 55%; /* Richer, vibrant orange */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 25 20% 18%; /* Darker gray-brown */
+    --secondary-foreground: 30 50% 90%;
+    
+    --muted: 25 20% 18%;
+    --muted-foreground: 30 30% 70%;
+    
+    --accent: 45 85% 50%; /* Golden yellow */
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 25 20% 25%;
+    --input: 25 20% 25%;
+    --ring: 30 90% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: 'Inter', sans-serif; /* Consider adding a nice font like Inter */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold; /* Adjust font weight for headings */
+  }
+}
+
+.hero-pattern {
+  background-color: hsl(var(--secondary)); /* Use theme color */
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e67e22' fill-opacity='0.07'%3E%3Cpath d='M0 0h40v40H0zM40 40h40v40H40z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); /* Subtle pattern */
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: var(--radius);
+}
+
+.product-card:hover {
+  transform: translateY(-8px) scale(1.02); /* Enhanced hover effect */
+  box-shadow: 0 15px 30px -10px hsla(var(--primary), 0.2), 0 10px 15px -8px hsla(var(--primary), 0.15);
+}
+
+.spice-pattern {
+  background-color: hsl(var(--background)); /* Use theme color */
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d35400' fill-opacity='0.04' fill-rule='evenodd'%3E%3Ccircle cx='4' cy='4' r='2'/%3E%3Ccircle cx='14' cy='14' r='2'/%3E%3C/g%3E%3C/svg%3E"); /* More subtle spice pattern */
+}
+
+.category-card {
+  transition: all 0.4s ease-in-out; /* Smoother transition */
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.category-card:hover .category-image {
+  transform: scale(1.1); /* Increased scale effect */
+}
+.category-card:hover .category-card-overlay {
+  opacity: 1;
+}
+
+.category-image {
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother image scale */
+}
+
+.category-card-overlay {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.25rem 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2.5px; /* Slightly thicker underline */
+  bottom: -4px; /* Adjust position */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(var(--primary));
+  transition: width 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother underline animation */
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.glassmorphism-nav {
+  background-color: hsla(var(--background), 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(12px); /* Blur effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  border-bottom: 1px solid hsla(var(--border), 0.2); /* Subtle border */
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+}
+
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btn-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px 5px hsla(var(--primary), 0.4), 0 0 25px 10px hsla(var(--accent), 0.2);
+}
+
+.btn-glow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, hsla(var(--primary), 0.3) 0%, transparent 70%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn-glow:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
