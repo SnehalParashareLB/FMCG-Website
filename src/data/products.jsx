@@ -46,7 +46,7 @@ export const products = [
     id: "n4",
     name: "Patal Pohyancha Chivda",
     category: "namkeens",
-    price: 50,
+    price: 90,
     image: "/finalImages/nPChivada.png",
     description: "Pohaynacha chivda is a crunchy snack made from flattened rice, peanuts, spices, and curry leaves, enjoyed during festivals or tea-time.",
     details: "Pohayacha chivda is a traditional Maharashtrian snack made from thin flattened rice (poha), roasted with peanuts, dried coconut, green chilies, mustard seeds, and curry leaves. It’s lightly spiced, slightly sweet, and crunchy.",
