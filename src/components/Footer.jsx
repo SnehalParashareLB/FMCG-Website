@@ -51,7 +51,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 text-primary shrink-0 mt-1" />
                 <span className="text-foreground/80">
-                  1306, Sadashiv Peth, Near Khunya Murlidhar  Mandir, Khajina Vihir Rd,  Pune, MH 411030.
+                  1306, Sadashiv Peth, Near Khunya Murlidhar  Mandir, Khajina Vihir Rd,  <br></br>Pune, MH 411030.
                 </span>
               </li>
               <li className="flex items-center">
