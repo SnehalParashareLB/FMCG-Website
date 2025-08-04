@@ -7,10 +7,10 @@ import { Quote } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: 'Priya Sharma',
-    role: 'Food Enthusiast',
-    content: 'The namkeens from Chitale Sweet Home remind me of my grandmother\'s cooking. Authentic flavors that bring back childhood memories!',
-    avatar: 'https://i.pravatar.cc/150?img=32'
+    name: 'Milind Khangaonkar',
+    role: 'Local Guide',
+    content: 'Chitale sweet home is popular in all over Maharashtra and in India also for excellent quality and delicious taste of all items. Famous item is BAKAR WADI.',
+    avatar: 'https://i.pravatar.cc/150?img=12'
   },
   {
     id: 2,

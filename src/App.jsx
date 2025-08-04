@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from '@/components/ui/toaster';
@@ -7,6 +6,8 @@ import Footer from '@/components/Footer';
 import HomePage from '@/pages/HomePage';
 import ProductsPage from '@/pages/ProductsPage';
 import ProductDetailPage from '@/pages/ProductDetailPage';
+import BakarwadiHero from '@/components/Bakarwadi';
+import OffersHero from '@/components/Offers'; // Add this import
 import AboutPage from '@/pages/AboutPage';
 import ContactPage from '@/pages/ContactPage';
 import { AnimatePresence } from 'framer-motion';
@@ -22,6 +23,8 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/products/:category" element={<ProductsPage />} />
               <Route path="/product/:id" element={<ProductDetailPage />} />
+              <Route path="/products/bakarwadi" element={<BakarwadiHero />} />
+              <Route path="/offers" element={<OffersHero />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
             </Routes>

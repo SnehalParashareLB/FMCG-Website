@@ -15,78 +15,81 @@ const Hero = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-  };
-  
-  const imageVariants = {
-    hidden: { opacity: 0, scale: 0.8, rotate: -5 },
-    visible: { opacity: 1, scale: 1, rotate: 0, transition: { duration: 0.8, type: "spring", stiffness: 100 } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: 'easeOut' },
+    },
   };
 
   return (
-    <div className="relative overflow-hidden hero-pattern min-h-[80vh] md:min-h-[70vh] flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/80 to-background"></div>
-      <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
-        <motion.div 
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+    <div className="relative min-h-[90vh] w-full overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/currcshopImg.jpg"
+          alt="Chitale Sweet Home Shop Front"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10" />
+
+      {/* Foreground Content */}
+      <div className="relative z-20 flex items-center justify-center min-h-[90vh] text-center px-4">
+        <motion.div
+          className="max-w-3xl text-white space-y-8 pt-12" // <-- text moved downward here
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <div className="space-y-6 text-center lg:text-left">
-            <motion.div 
-              variants={itemVariants}
-              className="inline-flex items-center bg-primary/10 text-primary px-4 py-2 rounded-full font-medium text-sm shadow-sm"
-            >
-              <Sparkles className="h-4 w-4 mr-2" />
-              Authentic Indian Flavors
-            </motion.div>
-            <motion.h1 
-              variants={itemVariants}
-              className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight"
-            >
-              Discover the Taste of <span className="gradient-text">Tradition</span>
-            </motion.h1>
-            <motion.p 
-              variants={itemVariants}
-              className="text-lg text-foreground/80 max-w-xl mx-auto lg:mx-0"
-            >
-              Handcrafted namkeens and sweets made with authentic recipes passed down through generations. Experience the rich flavors of India.
-            </motion.p>
-            <motion.div 
-              variants={itemVariants}
-              className="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start"
-            >
-              <Button size="lg" asChild className="btn-glow">
-                <Link to="/products/namkeens">
-                  Explore Namkeens
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild className="btn-glow border-primary/50 hover:bg-primary/5 hover:text-primary">
-                <Link to="/products/sweets" className="group">
-                  Discover Sweets
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
-            </motion.div>
-          </div>
-
-          {/* Updated image section */}
           <motion.div
-            variants={imageVariants}
-            className="relative group"
+            variants={itemVariants}
+            className="inline-flex items-center bg-primary/20 text-white px-4 py-2 rounded-full font-medium text-sm shadow-sm"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl p-6 bg-white flex items-center justify-center aspect-[4/3]">
-            <img 
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105" 
-            alt="Chitale Sweet Home Shop Front" 
-            src="/currcshopImg.jpg" 
-            />
-            </div>
-
-            <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] rounded-full bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/10 blur-3xl opacity-60 animate-pulse-slow"></div>
+            <Sparkles className="h-4 w-4 mr-2" />
+            Authentic Indian Flavors
           </motion.div>
 
+          <motion.h1
+            variants={itemVariants}
+            style={{ fontFamily: '"Playfair Display", serif' }}
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight"
+          >
+            A Legacy of<span className="gradient-text"> Flavor,</span>
+            <br />
+            Since the<span className="gradient-text"> First </span>Bite.
+          </motion.h1>
+
+          <motion.p
+            variants={itemVariants}
+            className="text-lg text-white/90 max-w-xl mx-auto"
+          >
+            <h6
+              style={{
+                fontFamily: "'Yatra One', cursive",
+                letterSpacing: '1.5px',
+              }}
+            >
+              स्थापना: १९५४
+            </h6>
+          </motion.p>
+
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-wrap gap-4 justify-center pt-4"
+          >
+            <Button size="lg" asChild className="btn-glow">
+              <Link to="/products/namkeens">Explore Namkeens</Link>
+            </Button>
+            <Button size="lg" asChild className="btn-glow">
+              <Link to="/products/sweets" className="group">
+                Discover Sweets
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </Button>
+          </motion.div>
         </motion.div>
       </div>
     </div>
