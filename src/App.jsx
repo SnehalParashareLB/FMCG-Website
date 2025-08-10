@@ -7,7 +7,7 @@ import HomePage from '@/pages/HomePage';
 import ProductsPage from '@/pages/ProductsPage';
 import ProductDetailPage from '@/pages/ProductDetailPage';
 import BakarwadiHero from '@/components/Bakarwadi';
-import OffersHero from '@/components/Offers.jsx'; // Add this import
+import OffersHero from '@/components/OffersHero.jsx'; // Add this import
 import AboutPage from '@/pages/AboutPage';
 import ContactPage from '@/pages/ContactPage';
 import { AnimatePresence } from 'framer-motion';
@@ -24,7 +24,7 @@ function App() {
               <Route path="/products/:category" element={<ProductsPage />} />
               <Route path="/product/:id" element={<ProductDetailPage />} />
               <Route path="/products/bakarwadi" element={<BakarwadiHero />} />
-              <Route path="/Offers" element={<OffersHero />} />
+              <Route path="/OffersHero" element={<OffersHero />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
             </Routes>
