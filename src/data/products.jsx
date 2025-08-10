@@ -46,7 +46,7 @@ export const products = [
     id: "n4",
     name: "Patal Pohyancha Chivda",
     category: "namkeens",
-    price: 60,
+    price: 90,
     image: "/finalImages/nPChivada.png",
     description: "Pohaynacha chivda is a crunchy snack made from flattened rice, peanuts, spices, and curry leaves, enjoyed during festivals or tea-time.",
     details: "Pohayacha chivda is a traditional Maharashtrian snack made from thin flattened rice (poha), roasted with peanuts, dried coconut, green chilies, mustard seeds, and curry leaves. It’s lightly spiced, slightly sweet, and crunchy.",
@@ -383,19 +383,19 @@ export const products = [
   featured: true
 },
 
-  {
-  id: "3",
-  name: "Kachori",
-  category: "snacks",
-  price: 23,
-  image: " ",
-  description: "Crispy, deep-fried pastry filled with a spicy and tangy stuffing.",
-  details: "Kachori is a popular Indian snack made from a flaky outer layer of all-purpose flour, stuffed with a spiced filling of lentils, peas, or onions. Deep-fried to golden perfection, it has a crunchy exterior and flavorful core, making it a favorite tea-time and festive delicacy.",
-  ingredients: ["All-purpose flour", "Moong dal or green peas", "Onions (optional)", "Ginger-garlic paste", "Green chilies", "Coriander powder", "Cumin seeds", "Garam masala", "Red chili powder", "Salt", "Oil", "Water"],
-  weight: "120gm",
-  isNew: false,
-  featured: false
-},
+//   {
+//   id: "3",
+//   name: "Kachori",
+//   category: "snacks",
+//   price: 23,
+//   image: " ",
+//   description: "Crispy, deep-fried pastry filled with a spicy and tangy stuffing.",
+//   details: "Kachori is a popular Indian snack made from a flaky outer layer of all-purpose flour, stuffed with a spiced filling of lentils, peas, or onions. Deep-fried to golden perfection, it has a crunchy exterior and flavorful core, making it a favorite tea-time and festive delicacy.",
+//   ingredients: ["All-purpose flour", "Moong dal or green peas", "Onions (optional)", "Ginger-garlic paste", "Green chilies", "Coriander powder", "Cumin seeds", "Garam masala", "Red chili powder", "Salt", "Oil", "Water"],
+//   weight: "120gm",
+//   isNew: false,
+//   featured: false
+// },
 
   {
   id: "3",
@@ -411,19 +411,19 @@ export const products = [
   featured: true
 },
 
-  {
-  id: "3",
-  name: "Matar Karanji",
-  category: "snacks",
-  price: 23,
-  image: " ",
-  description: "Crispy, deep-fried pastry stuffed with a spiced green pea filling.",
-  details: "Matar Karanji is a savory Maharashtrian snack made from a flaky outer covering of all-purpose flour, filled with a flavorful mixture of green peas, coconut, and spices. Deep-fried to golden perfection, it offers a delicious blend of crispiness and rich, spiced filling, often enjoyed during festive occasions.",
-  ingredients: ["All-purpose flour", "Green peas", "Grated coconut", "Green chilies", "Ginger-garlic paste", "Coriander powder", "Cumin seeds", "Garam masala", "Red chili powder", "Salt", "Oil", "Water"],
-  weight: "120gm",
-  isNew: false,
-  featured: false
-},
+//   {
+//   id: "3",
+//   name: "Matar Karanji",
+//   category: "snacks",
+//   price: 23,
+//   image: " ",
+//   description: "Crispy, deep-fried pastry stuffed with a spiced green pea filling.",
+//   details: "Matar Karanji is a savory Maharashtrian snack made from a flaky outer covering of all-purpose flour, filled with a flavorful mixture of green peas, coconut, and spices. Deep-fried to golden perfection, it offers a delicious blend of crispiness and rich, spiced filling, often enjoyed during festive occasions.",
+//   ingredients: ["All-purpose flour", "Green peas", "Grated coconut", "Green chilies", "Ginger-garlic paste", "Coriander powder", "Cumin seeds", "Garam masala", "Red chili powder", "Salt", "Oil", "Water"],
+//   weight: "120gm",
+//   isNew: false,
+//   featured: false
+// },
 
   {
   id: "3",
@@ -453,19 +453,19 @@ export const products = [
   featured: true
 },
 
-  {
-  id: "3",
-  name: "Alu Wadi",
-  category: "snacks",
-  price: 23,
-  image: "",
-  description: "Spiced, tangy colocasia leaves layered with gram flour paste, rolled, and steamed to perfection.",
-  details: "Alu Wadi, also known as Patra, is a traditional Maharashtrian snack made by spreading a spiced gram flour mixture over colocasia leaves, rolling them tightly, steaming, and then shallow-frying for added crispness. It has a unique combination of tangy, spicy, and slightly sweet flavors with a soft yet firm texture.",
-  ingredients: ["Colocasia leaves (alu leaves)", "Gram flour (besan)", "Tamarind paste", "Jaggery", "Ginger-green chili paste", "Turmeric powder", "Red chili powder", "Coriander powder", "Cumin seeds", "Sesame seeds", "Salt", "Oil"],
-  weight: "120gm",
-  isNew: false,
-  featured: false
-},
+//   {
+//   id: "3",
+//   name: "Alu Wadi",
+//   category: "snacks",
+//   price: 23,
+//   image: "",
+//   description: "Spiced, tangy colocasia leaves layered with gram flour paste, rolled, and steamed to perfection.",
+//   details: "Alu Wadi, also known as Patra, is a traditional Maharashtrian snack made by spreading a spiced gram flour mixture over colocasia leaves, rolling them tightly, steaming, and then shallow-frying for added crispness. It has a unique combination of tangy, spicy, and slightly sweet flavors with a soft yet firm texture.",
+//   ingredients: ["Colocasia leaves (alu leaves)", "Gram flour (besan)", "Tamarind paste", "Jaggery", "Ginger-green chili paste", "Turmeric powder", "Red chili powder", "Coriander powder", "Cumin seeds", "Sesame seeds", "Salt", "Oil"],
+//   weight: "120gm",
+//   isNew: false,
+//   featured: false
+// },
 
 ];
 

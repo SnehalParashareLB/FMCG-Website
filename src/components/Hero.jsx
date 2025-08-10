@@ -66,14 +66,15 @@ const Hero = () => {
             variants={itemVariants}
             className="text-lg text-white/90 max-w-xl mx-auto"
           >
-            <h6
+            <h1
               style={{
                 fontFamily: "'Yatra One', cursive",
                 letterSpacing: '1.5px',
+                fontSize: '1.5rem',
               }}
             >
               स्थापना: १९५४
-            </h6>
+            </h1>
           </motion.p>
 
           <motion.div

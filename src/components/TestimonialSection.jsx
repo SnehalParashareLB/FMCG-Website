@@ -5,27 +5,28 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Quote } from 'lucide-react';
 
 const testimonials = [
+    {
+    id: 3,
+    name: 'Anu Parchure',
+    role: 'Regular Customer',
+    content: 'Very nice food quality. Good hygiene. Great service.',
+    avatar: 'https://i.pravatar.cc/150?img=34'
+  },
   {
     id: 1,
     name: 'Milind Khangaonkar',
     role: 'Local Guide',
-    content: 'Chitale sweet home is popular in all over Maharashtra and in India also for excellent quality and delicious taste of all items. Famous item is BAKAR WADI.',
+    content: 'Chitale sweet home is popular in all over Maharashtra & India also for delicious taste of all items. Famous item is BAKARWADI.',
     avatar: 'https://i.pravatar.cc/150?img=12'
   },
   {
     id: 2,
-    name: 'Rahul Patel',
-    role: 'Chef',
-    content: 'As a professional chef, I appreciate the quality ingredients and traditional methods used. Their Kaju Katli is simply the best in town.',
+    name: 'Vijayraghanvan K',
+    role: 'Local Guide',
+    content: ' Very good place for snacks, I appreciate the quality of ingredients used.',
     avatar: 'https://i.pravatar.cc/150?img=60'
   },
-  {
-    id: 3,
-    name: 'Anita Desai',
-    role: 'Regular Customer',
-    content: 'I\'ve been ordering sweets for all family celebrations from Chitale Sweet Home for over 5 years. Never disappointed with their quality and taste.',
-    avatar: 'https://i.pravatar.cc/150?img=45'
-  }
+
 ];
 
 const TestimonialSection = () => {
