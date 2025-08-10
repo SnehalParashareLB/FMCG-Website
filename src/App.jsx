@@ -7,7 +7,7 @@ import HomePage from '@/pages/HomePage';
 import ProductsPage from '@/pages/ProductsPage';
 import ProductDetailPage from '@/pages/ProductDetailPage';
 import BakarwadiHero from '@/components/Bakarwadi';
-import OffersHero from '@/components/Offers'; // Add this import
+import OffersHero from '@/components/Offers.jsx'; // Add this import
 import AboutPage from '@/pages/AboutPage';
 import ContactPage from '@/pages/ContactPage';
 import { AnimatePresence } from 'framer-motion';
