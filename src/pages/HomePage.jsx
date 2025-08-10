@@ -4,7 +4,6 @@ import Hero from '@/components/Hero';
 import FeaturedProducts from '@/components/FeaturedProducts';
 import CategoryCard from '@/components/CategoryCard';
 import TestimonialSection from '@/components/TestimonialSection';
-import OffersHero from '@/components/OffersHero'; // Fixed: Import OffersHero instead of Offers
 import FeatureSection from '@/components/FeatureSection';
 import NewsletterSection from '@/components/NewsletterSection';
 import { getFeaturedProducts, categories } from '@/data/products';
@@ -109,9 +108,6 @@ const HomePage = () => {
         description="Traditional Indian sweets made with authentic recipes and premium ingredients."
         category="sweets"
       />
-      
-      {/* Add the OffersHero component here */}
-      <OffersHero />
       
       <TestimonialSection />
             
