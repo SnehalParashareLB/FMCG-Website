@@ -213,19 +213,19 @@ export const products = [
     isNew: false,
     featured: true
   },
-  {
-    id: "s3",
-    name: "Motichoor Ladoo",
-    category: "sweets",
-    price: 75,
-    image: "/finalImages/sMotichoor.png",
-    description: "Pista Barfi is a rich, nutty Indian sweet made with pistachios, khoya, and cardamom.",
-    details: "Made with ground pistachios, khoya, sugar, and cardamom. Its smooth, rich texture and vibrant green color make it a festive treat for celebrations.",
-    ingredients: ["Pistachios (Pista)", "Khoya (Mawa)", "Sugar", "Cardamom powder", "Ghee"],
-    weight: "250g",
-    isNew: false,
-    featured: true
-  },
+  // {
+  //   id: "s3",
+  //   name: "Motichoor Ladoo",
+  //   category: "sweets",
+  //   price: 75,
+  //   image: "/finalImages/sMotichoor.png",
+  //   description: "Pista Barfi is a rich, nutty Indian sweet made with pistachios, khoya, and cardamom.",
+  //   details: "Made with ground pistachios, khoya, sugar, and cardamom. Its smooth, rich texture and vibrant green color make it a festive treat for celebrations.",
+  //   ingredients: ["Pistachios (Pista)", "Khoya (Mawa)", "Sugar", "Cardamom powder", "Ghee"],
+  //   weight: "250g",
+  //   isNew: false,
+  //   featured: true
+  // },
   {
     id: "s4",
     name: "Gulabjamun",
@@ -330,19 +330,19 @@ export const products = [
     isNew: false,
     featured: false
   },
-{
-  id: "s11",
-  name: "Sp. Motichoor Ladoo",
-  category: "sweets",
-  price: 120,
-  image: "/finalImages/sMotichoor.png",
-  description: "Soft, melt-in-the-mouth orange laddoos made from tiny gram flour pearls.",
-  details: "Motichoor Ladoo is a traditional Indian sweet made from tiny, fried gram flour pearls (boondis) cooked in ghee and bound together with sugar syrup. These delicate laddoos have a signature orange hue, soft texture, and rich flavor, often garnished with dry fruits and served during weddings and festivals.",
-  ingredients: ["Gram flour (besan)", "Sugar", "Ghee", "Cardamom powder", "Food color", "Dry fruits", "Water"],
-  weight: "250g",
-  isNew: false,
-  featured: false
-},
+// {
+//   id: "s11",
+//   name: "Sp. Motichoor Ladoo",
+//   category: "sweets",
+//   price: 120,
+//   image: "/finalImages/sMotichoor.png",
+//   description: "Soft, melt-in-the-mouth orange laddoos made from tiny gram flour pearls.",
+//   details: "Motichoor Ladoo is a traditional Indian sweet made from tiny, fried gram flour pearls (boondis) cooked in ghee and bound together with sugar syrup. These delicate laddoos have a signature orange hue, soft texture, and rich flavor, often garnished with dry fruits and served during weddings and festivals.",
+//   ingredients: ["Gram flour (besan)", "Sugar", "Ghee", "Cardamom powder", "Food color", "Dry fruits", "Water"],
+//   weight: "250g",
+//   isNew: false,
+//   featured: false
+// },
   // {
   //   id: "s5",
   //   name: "Soan Papdi",
