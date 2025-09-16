@@ -40,7 +40,7 @@ export const products = [
     ingredients: ["Rice flour", "Gram flour (besan)", "Urad dal flour", "Moong dal flour", "Cumin seeds", "Sesame seeds", "Carom seeds (ajwain)", "Red chili powder", "Turmeric powder", "Salt", "Oil", "Water"],
     weight: "200g",
     isNew: false,
-    featured: true
+    featured: false
   },
   {
     id: "n4",
@@ -53,7 +53,7 @@ export const products = [
     ingredients: ["Thin Poha (flattened rice)", "Peanuts", "Roasted chana dal (daliya)", "Dry coconut slices", "Cashew nuts", "Raisins", "Oil", "Mustard seeds", "Cumin seeds", "Green chilies", "Curry leaves", "Turmeric powder", "Asafoetida (hing)", "Sugar", "Salt"],
     weight: "200g",
     isNew: false,
-    featured: true
+    featured: false
   },
     {
     id: "n5",
@@ -105,7 +105,7 @@ export const products = [
     ingredients: ["Rice flour", "Gram flour (besan)", "Butter or ghee", "Cumin seeds", "Sesame seeds", "Red chili powder", "Turmeric powder", "Carom seeds (ajwain)", "Salt", "Oil", "Water"],
     weight: "200g",
     isNew: false,
-    featured: false
+    featured: true
   },
     {
     id: "n9",
