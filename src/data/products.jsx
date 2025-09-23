@@ -44,7 +44,7 @@ export const products = [
   },
   {
     id: "n4",
-    name: "Patal Pohyancha Chivda",
+    name: "Patal Poha Chivda",
     category: "namkeens",
     price: 90,
     image: "/finalImages/nPChivada.png",
@@ -57,7 +57,7 @@ export const products = [
   },
     {
     id: "n5",
-    name: "Bhajkya Pohyancha Chivda",
+    name: "Bhajka Poha Chivda",
     category: "namkeens",
     price: 70,
     image: "/finalImages/nBhChivada.png",
@@ -70,7 +70,7 @@ export const products = [
   },
   {
     id: "n6",
-    name: "Batatyacha Chivda",
+    name: "Batata Chivda",
     category: "namkeens",
     price: 60,
     image: "/finalImages/nBChivada.png",
@@ -83,7 +83,7 @@ export const products = [
   },
   {
     id: "n7",
-    name: "Makyacha Chivda",
+    name: "Maka Chivda",
     category: "namkeens",
     price: 60,
     image: "/finalImages/nMChivada.png",
@@ -189,7 +189,7 @@ export const products = [
   // Sweets
   {
     id: "s1",
-    name: "Kesari Pedha",
+    name: "Keshari Pedha",
     category: "sweets",
     price: 140,
     image: "/finalImages/sKesariPedha.png",
