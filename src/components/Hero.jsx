@@ -73,7 +73,7 @@ const Hero = () => {
                 fontSize: '1.5rem',
               }}
             >
-              स्थापना: १९५४
+              EST. 1954
             </h1>
           </motion.p>
 
