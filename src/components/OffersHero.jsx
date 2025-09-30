@@ -61,7 +61,7 @@ const OffersHero = () => {
 
   // Top Edge
   for (let i = 0; i < numTopBottom; i++) {
-    elements.push({ type: i % 2 === 0 ? 'Diya' : 'Spark', style: { top: '5%', left: `${5 + i * (90 / (numTopBottom - 1))}%` } });
+    elements.push({ type: i % 2 === 0 ? 'Diya' : 'Spark', style: { top: '1%', left: `${5 + i * (90 / (numTopBottom - 1))}%` } });
   }
   // Bottom Edge
   for (let i = 0; i < numTopBottom; i++) {
@@ -85,7 +85,7 @@ const OffersHero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-pink-800 to-orange-700 z-0" />
       <div className="absolute inset-0 opacity-10 z-5" style={{
         backgroundImage: `radial-gradient(circle at 25% 25%, white 2px, transparent 2px), radial-gradient(circle at 75% 75%, white 2px, transparent 2px)`,
-        backgroundSize: '50px 50px'
+        backgroundSize: '30px 30px'
       }} />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 z-10" />
 
@@ -144,10 +144,10 @@ const OffersHero = () => {
 
             <motion.div
               variants={itemVariants}
-              className="grid grid-cols-1 gap-12 max-w-2xl mx-auto pt-10"
+              className="grid grid-cols-1 gap-12 max-w-lg mx-auto pt-10"
             >
               <motion.div 
-                className="bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-sm border border-pink-300/30 rounded-2xl p-6 text-center flex flex-col items-center shadow-xl"
+                className="bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-sm border border-pink-300/30 rounded-2xl p-4 text-center flex flex-col items-center shadow-xl"
               >
                 <div className="relative image-glow-pink rounded-lg mb-6">
                   <img src="src/assets/hMixMithai.jpg" alt="Mix Mithai Hamper" className="w-full h-auto object-cover rounded-lg shadow-md" />
@@ -157,7 +157,7 @@ const OffersHero = () => {
               </motion.div>
 
               <motion.div 
-                className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-sm border border-orange-300/30 rounded-2xl p-6 text-center flex flex-col items-center shadow-xl"
+                className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-sm border border-orange-300/30 rounded-2xl p-4 text-center flex flex-col items-center shadow-xl"
               >
                 <div className="relative image-glow-orange rounded-lg mb-6">
                   <img src="src/assets/hBarfi.jpg" alt="Barfi Hamper" className="w-full h-auto object-cover rounded-lg shadow-md" />
@@ -167,7 +167,7 @@ const OffersHero = () => {
               </motion.div>
 
               <motion.div 
-                className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-300/30 rounded-2xl p-6 text-center flex flex-col items-center shadow-xl"
+                className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-300/30 rounded-2xl p-4 text-center flex flex-col items-center shadow-xl"
               >
                 <div className="relative image-glow-blue rounded-lg mb-6">
                   <img src="src/assets/hFaralBox.jpg" alt="Faral Hamper" className="w-full h-auto object-cover rounded-lg shadow-md" />
