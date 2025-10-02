@@ -131,7 +131,7 @@ const OffersHero = () => {
               </span>
               <br/>
               <span className="text-white text-4xl sm:text-5xl md:text-6xl font-bold">
-                Curated Festive Hampers
+                Curated Diwali Hampers
               </span>
             </motion.h1>
 
