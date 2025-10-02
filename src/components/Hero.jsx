@@ -74,7 +74,7 @@ const Hero = () => {
                 fontSize: '2.0rem',
               }}
             >
-              Est: 1954
+              EST. 1954
             </h1>
           </motion.p>
 
