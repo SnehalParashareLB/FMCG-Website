@@ -24,12 +24,13 @@ const Hero = () => {
 
   return (
     <div className="relative min-h-[90vh] w-full overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      {/* Background Image (responsive with different positions for mobile/desktop) */}
+      <div className="absolute inset-0 z-0">  
         <img
-          src="/currcshopImg.jpg"
+          src="/currcshopImg.png"
           alt="Chitale Sweet Home Shop Front"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover sm:object-center object-top"
+          loading="lazy"
         />
       </div>
 
@@ -39,7 +40,7 @@ const Hero = () => {
       {/* Foreground Content */}
       <div className="relative z-20 flex items-center justify-center min-h-[90vh] text-center px-4">
         <motion.div
-          className="max-w-3xl text-white space-y-8 pt-12" // <-- text moved downward here
+          className="max-w-3xl text-white space-y-8 pt-12"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -70,10 +71,10 @@ const Hero = () => {
               style={{
                 fontFamily: "'Yatra One', cursive",
                 letterSpacing: '1.5px',
-                fontSize: '1.5rem',
+                fontSize: '2.0rem',
               }}
             >
-              स्थापना: १९५४
+              Est: 1954
             </h1>
           </motion.p>
 
