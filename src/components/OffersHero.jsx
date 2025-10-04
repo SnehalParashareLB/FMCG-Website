@@ -150,7 +150,7 @@ const OffersHero = () => {
                 className="bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-sm border border-pink-300/30 rounded-2xl p-4 text-center flex flex-col items-center shadow-xl"
               >
                 <div className="relative image-glow-pink rounded-lg mb-6">
-                  <img src="src/assets/hMixMithai.jpg" alt="Mix Mithai Hamper" className="w-full h-auto object-cover rounded-lg shadow-md" />
+                  <img src="/finalImages/hpMixMithai.png" alt="Mix Mithai Hamper" className="w-full h-auto object-cover rounded-lg shadow-md" />
                 </div>
                 <h3 className="text-3xl font-bold text-pink-200 mb-2">Mix Mithai Hamper</h3>
                 <p className="text-pink-100/80 text-base">A delightful assortment of our finest, handcrafted mithai, beautifully packaged.</p>
@@ -160,7 +160,7 @@ const OffersHero = () => {
                 className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-sm border border-orange-300/30 rounded-2xl p-4 text-center flex flex-col items-center shadow-xl"
               >
                 <div className="relative image-glow-orange rounded-lg mb-6">
-                  <img src="src/assets/hBarfi.jpg" alt="Barfi Hamper" className="w-full h-auto object-cover rounded-lg shadow-md" />
+                  <img src="/finalImages/hpMixBarfi.png" alt="Barfi Hamper" className="w-full h-auto object-cover rounded-lg shadow-md" />
                 </div>
                 <h3 className="text-3xl font-bold text-orange-200 mb-2">Barfi Hamper</h3>
                 <p className="text-orange-100/80 text-base">A crunchy and savory collection of traditional sweets, perfect for sharing.</p>
@@ -170,7 +170,7 @@ const OffersHero = () => {
                 className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-300/30 rounded-2xl p-4 text-center flex flex-col items-center shadow-xl"
               >
                 <div className="relative image-glow-blue rounded-lg mb-6">
-                  <img src="src/assets/hFaralBox.jpg" alt="Faral Hamper" className="w-full h-auto object-cover rounded-lg shadow-md" />
+                  <img src="/finalImages/hpFaralBox.png" alt="Faral Hamper" className="w-full h-auto object-cover rounded-lg shadow-md" />
                 </div>
                 <h3 className="text-3xl font-bold text-blue-200 mb-2">Authentic Faral Hamper</h3>
                 <p className="text-blue-100/80 text-base">Traditional homemade snacks to bring authentic flavor to your festive table.</p>

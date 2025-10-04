@@ -33,8 +33,6 @@ const navLinks = [
   { name: 'Sweets', path: '/products/sweets' },
   { name: 'Snacks', path: '/products/snacks' },      // New
   { name: 'Bakarwadi', path: '/products/bakarwadi' },// New
-
-  { name: 'Festives', path: '/offers' },               // New
   { name: 'Diwali Special', path: '/offers' },               // New
   { name: 'About', path: '/about' },
   // { name: 'Contact', path: '/contact' },
